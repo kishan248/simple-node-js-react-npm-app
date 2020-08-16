@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        docker { image 'node:14-alpine' }
-    }
+    agent { docker { image 'python:3.5.1' } }
     environment {
         CI = 'true'
     }
